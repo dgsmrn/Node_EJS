@@ -7,13 +7,14 @@ app.set("view engine", "ejs");
 
 //get() cria uma rota na raiz do site e executa o index
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("pages/index");
 });
 
+//get() cria uma rota para executar a página sobre que representa o arquivo about.ejs
 app.get("/sobre", function (req, res) {
-  res.render("about");
+  res.render("pages/about");
 });
 
 //funcao do express que fica ouvindo a porta 8080 -- http://localhost:8080/
 app.listen(8080)
-console.log("Rodando")
+console.log("Sevidor Funcionando")
